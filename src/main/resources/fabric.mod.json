@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "noores3",
+  "version": "${version}",
+  "name": "NoOres3",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/noores3/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "tysik.noores3.Noores3"
+    ]
+  },
+  "mixins": [
+    "noores3.mixins.json",
+    {
+      "config": "noores3.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
